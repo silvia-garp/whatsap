@@ -1,0 +1,25 @@
+{
+  "name": "whatsap",
+  "version": "1.0.0",
+  "description": "It is a messaging application for SAP subject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvia-garp/whatsap.git"
+  },
+  "keywords": [
+    "SAP"
+  ],
+  "author": "Silvia García Peinado and Monica Roldán Aranda",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/silvia-garp/whatsap/issues"
+  },
+  "homepage": "https://github.com/silvia-garp/whatsap#readme",
+  "dependencies":{
+    "serve":"^11.0.0"
+  }
+}
