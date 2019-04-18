@@ -1,0 +1,66 @@
+<html>
+<head>	
+  <title>WhatSAT 2019</title>  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/estilos.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<!--                      -->
+<!-- Seccion 1.principal  -->
+<!--                      -->
+<div id="principal">
+  <!--                      -->
+  <!-- Seccion 2.identifica -->
+  <!--                      -->
+  <div class="container center" id="identifica">
+     <h1 class="top_header">WhatSAT 2019</h1>
+     <form>
+       <label class="text-primary">*Introduce tu nombre de usuario</label>
+       <div class="row">
+         <div class="col-xs-7"><input type="text" name="userName" class="form-control" onChange="handleInput(value)"/></div>
+         <div class="col-xs-2"><input type="button" class="btn btn-primary"  value="Usuarios" onClick="handleClick()"/></div>
+       </div>
+     </form>
+  </div>
+  <!--                      -->
+  <!-- Seccion 3.contactos  -->
+  <!--                      -->
+  <div class="container center" id="contactos">
+  </div>
+  <!--                      -->
+  <!-- Seccion 4.terminal   -->
+  <!--                      -->
+  <div class="container" id="terminal">
+    <!--                      -->
+    <!-- Seccion 4.1.fotos      -->
+    <!--                      -->
+    <div class="container center" id="fotos">
+	   <form role="form center">
+	     <div class="row" id="Webcam">
+	       <video width="200" height="180"></video>
+	     </div>
+         <div class="row">
+           <input type="button" class="btn btn-primary" value="OK" onClick="capturePhoto()" />
+           <input type="button" class="btn btn-primary" value="Cancel" onClick="cancelPhoto()" />
+         </div>
+	   </form>
+     </div>
+    <div  class="pantalla" id="pantalla">
+    </div>
+    <div>
+      <input type="text" class="form-control" name="teclado" onChange="handleTeclado(value)"/>
+    </div>
+    <div id="comandos">
+      <img  width="40" name="envia" src='assets/images/send.png' alt="envia" onClick="handleEnvia()" />
+      <img  width="30" name="fotos" src='assets/images/photo.png' alt="fotos" onClick="handleFotos()" />
+      <img  width="30" name="geolocation" src='assets/images/geolocation.png' alt="geolocalizacion" onClick="handleGeoLocation()" />
+      <img  width="40" name="voz" src='assets/images/voice.png' alt="voz" onClick="handleVoz()" />
+    </div>
+  </div>
+</div>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
